@@ -5,11 +5,15 @@
     <textarea id="body" cols="30" rows="10"></textarea>
     <button>Submit</button>
 </form>
+
 {{#each Blogs}}
-    <h3>{{title}}</h3>
-    <p>{{body}}</p>
-    <button>delete</button>
-    <hr>
+<div class="card">
+  <h5 class="card-header">{{title}}</h5>
+  <div class="card-body">
+    <p class="card-text">{{body}}</p>
+    <button class="btn btn-primary deleteBtn">Delete</button>
+  </div>
+</div>
 {{/each}}
 
 <script src="/js/profile.js"></script>
